@@ -1,0 +1,53 @@
+name: Technical Issue
+description: Track a technical problem, bug, outage, setup issue, or agent failure.
+title: "[Technical Issue] "
+labels: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Plain-English description of the issue and why it matters.
+      placeholder: What broke, where did it happen, and what business process does it affect?
+    validations:
+      required: true
+  - type: textarea
+    id: surface
+    attributes:
+      label: Affected Surface
+      description: The real place where the issue showed up.
+      placeholder: Notion page, GitHub repo, VPS, agent, Discord, webchat, WordPress, GoHighLevel, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: What was verified directly.
+      placeholder: Error message, screenshot note, command result, page URL, service status, or user-visible symptom.
+    validations:
+      required: false
+  - type: textarea
+    id: likely-cause
+    attributes:
+      label: Likely Cause
+      description: Current best explanation. Mark guesses clearly.
+      placeholder: Proven facts first, then educated guesses.
+    validations:
+      required: false
+  - type: textarea
+    id: fix-plan
+    attributes:
+      label: Fix Plan
+      description: Practical path to repair the issue.
+      placeholder: First test lane, exact change, verification step, rollout step.
+    validations:
+      required: false
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: How we will know the problem is fixed.
+      placeholder: Public URL loads, agent responds, Notion page updated, workflow completes, etc.
+    validations:
+      required: false

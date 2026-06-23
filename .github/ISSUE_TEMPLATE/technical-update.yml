@@ -1,0 +1,45 @@
+name: Technical Update
+description: Record a technical change, setup, improvement, or new development.
+title: "[Technical Update] "
+labels: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Plain-English summary of what changed.
+      placeholder: What was added, changed, fixed, or documented?
+    validations:
+      required: true
+  - type: textarea
+    id: business-impact
+    attributes:
+      label: Business Impact
+      description: Why this matters for ZedBiz operations.
+      placeholder: Saves time, improves reliability, clarifies agent behavior, reduces manual work, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Details
+      description: Files, services, tools, prompts, configs, or pages touched.
+      placeholder: Repo paths, Notion links, agent names, service names, domains, or exact settings.
+    validations:
+      required: false
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: What was checked after the update.
+      placeholder: Tests run, real-world surface checked, links verified, service restarted, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: follow-up
+    attributes:
+      label: Follow-Up
+      description: Anything still worth doing later.
+      placeholder: Optional next steps.
+    validations:
+      required: false
