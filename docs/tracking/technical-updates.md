@@ -35,3 +35,10 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Updated the five Core Venture database rows to use `Core Ventures`.
 - Standardized Resort Directories on `ZCRD-Resort-Directories`.
 - Fixed the `Administrative` spelling error in the architecture plan.
+
+### Notion Folder Structure Governance Fields
+
+- Added operating fields to the Notion `Notion Folder Structure` database: `Folder Code`, `Official Name`, `Dashboard Page`, `Purpose`, `Google Drive Link`, `Owner`, `Review Cycle`, `Status`, `Sensitivity`, `Source`, `Related Master Databases`, `What Belongs Here`, and `What Does Not Belong Here`.
+- Renamed `Top Level Folder Category` to `Top Level Category` to match the requested field naming while preserving the existing category values.
+- Added controlled select options for `Review Cycle`, `Status`, `Sensitivity`, `Source`, and `Related Master Databases`.
+- Added `Review Cycle` once because it appeared twice in the field request.
