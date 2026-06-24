@@ -26,3 +26,12 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Prepared feedback for the `Cody-Z-Knowledge-Feedback` Notion page.
 - Main review themes: keep folder pages as dashboards, use shared master databases as the system backbone, normalize folder codes before buildout, add source-of-truth rules, add permission and sensitivity controls, and pilot one folder group before broad rollout.
 - Confirmed the current folder structure database already has useful starter fields: `Name`, `Top Level Folder Category`, `Short Description`, `Long Description`, and `Example`.
+
+### Notion Folder Code Cleanup
+
+- Updated the architecture plan to use the current folder-code pattern: `Z1AM`, `Z1ZC`, `Z1ZP`, `ZMMS`, `ZCGZ`, `ZCGG`, `ZCRD`, and `ZZZR`.
+- Changed `Core Initiatives` to `Core Ventures` where it referred to the Core Venture group.
+- Updated the Notion Folder Structure database select option from `Core Initiatives` to `Core Ventures`.
+- Updated the five Core Venture database rows to use `Core Ventures`.
+- Standardized Resort Directories on `ZCRD-Resort-Directories`.
+- Fixed the `Administrative` spelling error in the architecture plan.
