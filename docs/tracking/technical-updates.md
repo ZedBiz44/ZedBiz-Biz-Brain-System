@@ -109,3 +109,20 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Fetched the updated `Support-Doc-Ingestion-SOP` from Notion and confirmed all revised sections are present.
 - Fetched the `Support-Doc-Ingestion-Skill` from Notion and confirmed the gap analysis is accurate.
 - Confirmed this repository is the correct GitHub technical record: `ZedBiz44/ZedBiz-Biz-Brain-System`.
+
+### Research Process SOP Evergreen Cleanup
+
+- Checked the live Notion `Research-Process-SOP` against the requested dual-channel research workflow improvements.
+- Confirmed the SOP now requires both channels: OpenClaw Memory Wiki for agent-readable Markdown and Notion Z-Knowledge Core Master Databases for human-readable operations.
+- Replaced dated/agent-specific framing with evergreen operating language owned by ZedBiz Ops.
+- Added the exact VPS1 shared wiki route: `/opt/openclaw/shared/knowledge/wiki`.
+- Added the VPS2 personal workspace wiki route pattern and scheduled rsync handoff language.
+- Added the ZedBiz wiki frontmatter lint requirement, including `zedbiz-wiki-lint-inner.sh` when it is the active enforcement script.
+- Cleaned the recommended prompt so assignment instructions and completion-report requirements are separated.
+- Created the Notion Tech Updates journal record: `2026-06-27 | Cody | Research Process SOP Evergreen Cleanup`.
+
+### Verification
+
+- Fetched the updated `Research-Process-SOP` from Notion and confirmed the dual-channel rule, wiki routing, Notion track, frontmatter alignment, and success standard are present.
+- Confirmed no named agent troubleshooting history remains in the SOP body; only system-level references such as OpenClaw Memory Wiki, VPS1, and VPS2 remain where needed.
+- Confirmed the local tracking repo remote points to `https://github.com/ZedBiz44/ZedBiz-Biz-Brain-System.git`.
