@@ -145,3 +145,14 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Fetched the updated `Memory-Knowledge-Skills` page from Notion and confirmed all three skills include SOP, skill-file content, and deployment instructions.
 - Confirmed the Notion publishing skill links to the official Core-Master-Databases and Page/Research-Templates pages.
 - Confirmed the Wiki Research Skill tells agents to use the memory-wiki process first and report wiki artifacts plus lint/status results.
+
+### Memory Knowledge Skills Deployment Path Correction
+
+- Corrected the Notion `Memory-Knowledge-Skills` deployment instructions so deployable skills are placed under the agent workspace skills folder.
+- Replaced the incorrect shared-knowledge deployment pattern with `/opt/openclaw/agents/{agent}/workspace/skills/{skill-name}/SKILL.md`.
+- Added explicit wording that skills belong in the agent workspace, not the shared knowledge folder.
+
+### Verification
+
+- Fetched the updated Notion page and confirmed the three per-skill deployment sections now use `/opt/openclaw/agents/{agent}/workspace/skills/...`.
+- Confirmed the fleet deployment SOP now uses `/opt/openclaw/agents/{agent}/workspace/skills/{skill-name}/SKILL.md`.
