@@ -76,3 +76,34 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Fetched the updated `Research-Template-Guide` in Notion and confirmed the new guide sections are present.
 - Fetched the updated `Marketing-Swipes-Page-Research-Template` and confirmed the compact template content is present.
 - Confirmed the local repo remote points to `https://github.com/ZedBiz44/ZedBiz-Biz-Brain-System.git`.
+
+### Support Doc Ingestion SOP + Skill -- Review, Refinement, and Notion Update
+- Reviewed all three Support Documentation Ingestion SOPs (Grok, Cody, Ruby versions) and selected Cody's as the strongest foundation.
+- Applied the following refinements to Cody's SOP (Notion: `Support-Doc-Ingestion-SOP`):
+  - Flat file naming convention: `{folder}/{toolname}_{topic}.md` -- no nested tool sub-folders inside wiki sections.
+  - Context7 moved to first check in the source priority order; official docs remain the authority.
+  - Source priority reframed as a 4-tier table: Context7 (1st), Official Docs (2nd), PDFs (3rd), Supplemental (4th).
+  - 70/20/10 source mix described as a planning target, not a rigid rule.
+  - Ingestion workflow restructured: Option A+B as the default combined path, Option C (Manual Curation) as a defined fallback with explicit use cases.
+  - Docker Alpine chown workaround removed -- not relevant to this process.
+  - Transfer section clarified: same-VPS uses `cp -a` (per-folder full bundle), cross-VPS uses `rsync` over SSH (per-folder full bundle).
+  - `.openclaw-wiki/cache/` exclusion added to Operating Rules and Transfer section.
+  - Verify Wiki Context step added to the Ordered SOP.
+  - Required Transfer Record added to GitHub Tracking Model with full field list.
+  - Completion Gate updated to include wiki context verification and receiving-agent test.
+  - Refresh rule added: flag docs older than 6 months, re-research on major version release.
+  - Real task-style test template added with exact question format.
+  - Frontmatter status field expanded to: `draft | review | verified | partial | stale | deprecated`.
+- Reviewed the OpenClaw `Support-Doc-Ingestion-Skill` (Notion: `Support-Doc-Ingestion-Skill`).
+  - Confirmed skill is in sync with the updated SOP on all structural and technical content.
+  - Identified two remaining gaps in the SOP vs. the skill: "When To Stop And Ask" section (missing from SOP) and Quick Reference block (nice-to-have).
+- Architecture decisions confirmed:
+  - Individual agent wiki paths: `/opt/openclaw/shared/knowledge/{agent}/wiki`
+  - Shared main wiki is NOT used for tool documentation.
+  - GitHub `docs-research-log/` structure is the index and tracking layer only.
+  - Same-VPS transfers: `cp -a`. Cross-VPS transfers: `rsync -av --progress` over SSH.
+
+### Verification
+- Fetched the updated `Support-Doc-Ingestion-SOP` from Notion and confirmed all revised sections are present.
+- Fetched the `Support-Doc-Ingestion-Skill` from Notion and confirmed the gap analysis is accurate.
+- Confirmed this repository is the correct GitHub technical record: `ZedBiz44/ZedBiz-Biz-Brain-System`.
