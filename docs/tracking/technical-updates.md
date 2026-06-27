@@ -119,10 +119,12 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Added the VPS2 personal workspace wiki route pattern and scheduled rsync handoff language.
 - Added the ZedBiz wiki frontmatter lint requirement, including `zedbiz-wiki-lint-inner.sh` when it is the active enforcement script.
 - Cleaned the recommended prompt so assignment instructions and completion-report requirements are separated.
+- Added the official Core-Master-Databases page as the Notion routing index for selecting the correct Core Master Database before creating or updating research records.
 - Created the Notion Tech Updates journal record: `2026-06-27 | Cody | Research Process SOP Evergreen Cleanup`.
 
 ### Verification
 
 - Fetched the updated `Research-Process-SOP` from Notion and confirmed the dual-channel rule, wiki routing, Notion track, frontmatter alignment, and success standard are present.
+- Confirmed the Core-Master-Databases routing-index instruction appears in the main Notion channel section, the recommended assignment prompt, and the human review check.
 - Confirmed no named agent troubleshooting history remains in the SOP body; only system-level references such as OpenClaw Memory Wiki, VPS1, and VPS2 remain where needed.
 - Confirmed the local tracking repo remote points to `https://github.com/ZedBiz44/ZedBiz-Biz-Brain-System.git`.
