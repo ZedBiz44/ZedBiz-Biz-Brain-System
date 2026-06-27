@@ -173,3 +173,22 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Verified the installed wiki and Notion skill files contain the search-before-create sections.
 - Confirmed Edith and Terry containers remained healthy after the install.
 - `openclaw skills list` did not print the new workspace skills immediately, so this install is verified by file visibility rather than CLI list visibility.
+
+### Edith And Terry Skill Preload Fix
+
+- Diagnosed why the three ZedBiz knowledge skills were present on disk but not showing as runtime-ready skills.
+- Root cause: the staged `SKILL.md` files did not include OpenClaw-style YAML frontmatter, and one installed file had a hidden leading character/BOM before the heading.
+- Rebuilt all three skill files with valid YAML frontmatter and plain ASCII text:
+  - `zedbiz-knowledge-routing`
+  - `zedbiz-wiki-research`
+  - `zedbiz-notion-knowledge-publishing`
+- Reinstalled the corrected files for Edith and Terry under `/opt/openclaw/agents/{agent}/workspace/skills/`.
+- Refreshed the runtime-managed copy under `/opt/openclaw/agents/{agent}/skills/` while preserving `openclaw-workspace` as the reported source.
+- Updated the Notion `Memory-Knowledge-Skills` page so the deployable skill blocks include the YAML headers and the verification checklist requires `openclaw skills info`.
+
+### Verification
+
+- `openclaw skills info` now reports all three skills as `Ready` for both Terry and Edith.
+- Each skill reports `Source: openclaw-workspace`, `Visible to model: yes`, and `Available as command: yes`.
+- The reported path for each is `~/.openclaw/workspace/skills/{skill-name}/SKILL.md`.
+- Edith and Terry remained healthy after the fix.
