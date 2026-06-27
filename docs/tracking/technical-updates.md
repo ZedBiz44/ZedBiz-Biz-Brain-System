@@ -156,3 +156,20 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 
 - Fetched the updated Notion page and confirmed the three per-skill deployment sections now use `/opt/openclaw/agents/{agent}/workspace/skills/...`.
 - Confirmed the fleet deployment SOP now uses `/opt/openclaw/agents/{agent}/workspace/skills/{skill-name}/SKILL.md`.
+
+### Edith And Terry Memory Knowledge Skill Install
+
+- Installed the three ZedBiz memory knowledge skills for Edith and Terry under `/opt/openclaw/agents/{agent}/workspace/skills/`:
+  - `zedbiz-knowledge-routing`
+  - `zedbiz-wiki-research`
+  - `zedbiz-notion-knowledge-publishing`
+- Added explicit search-before-create behavior to the Notion source page and the installed skill files.
+- Search-before-create now tells agents to check the relevant wiki and/or Notion database before creating new pages, update existing canonical records when found, and create new records only when the topic is genuinely new or needs a separate source/research record.
+
+### Verification
+
+- Verified host-side files exist for Edith and Terry with expected `SKILL.md` sizes.
+- Verified from inside both containers that all three files are visible at `/home/node/.openclaw/workspace/skills/{skill-name}/SKILL.md`.
+- Verified the installed wiki and Notion skill files contain the search-before-create sections.
+- Confirmed Edith and Terry containers remained healthy after the install.
+- `openclaw skills list` did not print the new workspace skills immediately, so this install is verified by file visibility rather than CLI list visibility.
