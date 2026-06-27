@@ -128,3 +128,20 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Confirmed the Core-Master-Databases routing-index instruction appears in the main Notion channel section, the recommended assignment prompt, and the human review check.
 - Confirmed no named agent troubleshooting history remains in the SOP body; only system-level references such as OpenClaw Memory Wiki, VPS1, and VPS2 remain where needed.
 - Confirmed the local tracking repo remote points to `https://github.com/ZedBiz44/ZedBiz-Biz-Brain-System.git`.
+
+### Memory Knowledge Skills Completion
+
+- Replaced the draft Notion `Memory-Knowledge-Skills` page with complete SOP, deployable `SKILL.md`, and deployment sections for:
+  - `zedbiz-knowledge-routing`
+  - `zedbiz-wiki-research`
+  - `zedbiz-notion-knowledge-publishing`
+- Added direct official links to `Core-Master-Databases` and `Page/Research-Templates` inside the Notion publishing skill.
+- Reframed wiki research so the memory-wiki skill is the preferred filing process, with folder artifacts used as completion evidence rather than as the only instruction.
+- Removed stale placeholder text and hardcoded named-agent deployment examples from the page body.
+- Updated the Notion page database status to `Ready for Review` and `Status 1` to `Done`.
+
+### Verification
+
+- Fetched the updated `Memory-Knowledge-Skills` page from Notion and confirmed all three skills include SOP, skill-file content, and deployment instructions.
+- Confirmed the Notion publishing skill links to the official Core-Master-Databases and Page/Research-Templates pages.
+- Confirmed the Wiki Research Skill tells agents to use the memory-wiki process first and report wiki artifacts plus lint/status results.
