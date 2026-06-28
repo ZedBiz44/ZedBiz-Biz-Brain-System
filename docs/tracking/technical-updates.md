@@ -192,3 +192,18 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Each skill reports `Source: openclaw-workspace`, `Visible to model: yes`, and `Available as command: yes`.
 - The reported path for each is `~/.openclaw/workspace/skills/{skill-name}/SKILL.md`.
 - Edith and Terry remained healthy after the fix.
+
+### GaryVee Research Filing Verification And Fix
+
+- Verified Edith's Gary Vaynerchuk / GaryVee Notion page is correctly filed in the `People` Core Master Database under Core-Master-Databases.
+- Verified the Notion page properties were filled with Status `Done`, Creator `Edith`, Primary Agent `Edith`, Business Area, Knowledge Lane, Z-Knowledge, Sensitivity, and Confidence.
+- Verified the shared wiki synthesis exists at `syntheses/gary-vaynerchuk-garyvee-research.md` and contains source-backed claims linked to the Notion page and source URLs.
+- Found and fixed a wiki filing defect: the synthesis failed ZedBiz custom frontmatter lint because it was missing required ZedBiz fields and used numeric top-level `confidence`.
+- Added required frontmatter fields: `createdAt`, `createdBy`, `businessArea`, `sensitivity`, `zKnowledge`, `synthesisType`, and `primaryAgent`; changed top-level `confidence` to `high`.
+
+### Verification
+
+- Reran the ZedBiz frontmatter lint and confirmed GaryVee no longer appears in the custom lint errors.
+- Standard OpenClaw wiki lint still reports GaryVee's 3 open-question warnings; these are expected verification gaps, not filing/provenance failures.
+- The remaining ZedBiz frontmatter lint issue is unrelated: `syntheses/allie-bloyd-research.md`.
+- Confirmed Edith and Terry containers remained healthy after the wiki fix.
