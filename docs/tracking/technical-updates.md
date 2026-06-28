@@ -246,3 +246,23 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 
 - Verified Terry's live `SKILL.md` files match the master rollout copies.
 - Verified master copy permissions are readable for rollout use.
+
+### Edith Discord Channel Dispatch Repair
+
+- Investigated why Edith was not replying in the `#edith` Discord text channel while DMs still worked.
+- Verified Edith container/runtime was healthy and Discord account was connected.
+- Verified the Edith bot could read recent `#edith` channel messages through Discord API, including Jack's latest assignment and follow-up messages.
+- Found the live failure symptom in OpenClaw status: inbound delivery telemetry showed stuck dispatches with `dispatch 24/22` and a warning that multiple gateway dispatches had not completed.
+- Restarted only the Edith container to clear the stuck Discord/gateway dispatcher.
+- Compared Edith with Terry and found a config/runtime drift:
+  - Terry was using `openai/gpt-5.5` with explicit Codex runtime mapping.
+  - Edith was using `codex/gpt-5.5` with implicit `auto` runtime.
+- Backed up Edith config on VPS1 at `/tmp/edith-openclaw-20260628T063331Z.json`.
+- Aligned Edith's model lane to Terry's working pattern: primary `openai/gpt-5.5`, fallback `openai/gpt-5.4-mini`, plus practical OpenRouter fallbacks, with explicit Codex runtime mapping for OpenAI GPT models.
+- Restarted Edith again to apply the config.
+
+### Verification
+
+- Edith container returned healthy.
+- `openclaw channels status --deep` reports Discord connected and running.
+- `openclaw status --all` reports Discord `OK`, gateway reachable, channel issues none, and inbound delivery telemetry clean at `received 0`, `dispatch 0/0`, `turns 0`, `processed 0`.
