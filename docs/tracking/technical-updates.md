@@ -341,3 +341,20 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Ran `quick_validate.py` successfully for the staged `zedbiz-notion-knowledge-publishing` skill.
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38da3e33d58181afa167f8eb7cb13cd0
+
+## 2026-06-28 | Cody | Z-Knowledge Connections Plan Review
+
+### Summary
+
+- Reviewed the live Notion `Z-Knowledge-Connections` page under `Knowledge-System-Resources`.
+- Confirmed the proposed hybrid structure is directionally strong:
+  - Core Master Databases hold the real business objects.
+  - Direct Relations handle stable operational links.
+  - `Z-Connections` handles contextual, evidence-backed knowledge links.
+- Prepared improvement feedback focused on governance, connection quality, and avoiding a catch-all junk drawer.
+
+### Verification
+
+- Fetched the live Notion page before reviewing.
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38da3e33d5818170a529ca5cd84445cc
