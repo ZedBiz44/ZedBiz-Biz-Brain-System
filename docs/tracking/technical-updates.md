@@ -266,3 +266,29 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Edith container returned healthy.
 - `openclaw channels status --deep` reports Discord connected and running.
 - `openclaw status --all` reports Discord `OK`, gateway reachable, channel issues none, and inbound delivery telemetry clean at `received 0`, `dispatch 0/0`, `turns 0`, `processed 0`.
+
+### Edith Discord Follow-Up Fix
+
+- Investigated Jack's follow-up report that Edith still seemed not to hear the `#edith` text channel.
+- Confirmed the Discord channel itself was working: the bot could read Jack's latest `#edith` messages and had posted replies in the same channel.
+- Found the actual remaining failure was the runtime lane behind the channel:
+  - Edith hit a model request error because `openai/gpt-5.5` rejected `thinking=minimal`.
+  - The active Discord channel session sat behind that failed/long-running model call before recovering.
+  - Edith's three ZedBiz skill update proposals were still pending, so her active skill instructions were not yet updated.
+  - Edith's startup skill copies under `/home/node/.openclaw/skills/zedbiz-*` were owned by UID `1001` and caused skill watcher permission errors.
+- Patched Edith's runtime config to `agents.defaults.thinkingDefault = low`, which is accepted by GPT-5.5.
+- Applied Edith's pending Skill Workshop updates:
+  - `zedbiz-wiki-research-20260628-6a565c3c77`
+  - `zedbiz-notion-knowledge-publishing-20260628-7bdf5205b8`
+  - `zedbiz-knowledge-routing-20260628-d0639f4b44`
+- Fixed the ZedBiz startup skill folder ownership and permissions so the runtime can watch those folders.
+- Restarted Edith to load the runtime and skill fixes.
+
+### Verification
+
+- Edith container returned healthy.
+- Gateway startup now reports `openai/gpt-5.5 (thinking=low, fast=off)`.
+- `openclaw status --all` reports Discord `OK`, channel issues none, and inbound delivery telemetry clean at `received 0`, `dispatch 0/0`, `turns 0`, `processed 0`.
+- `openclaw skills list` reports the three ZedBiz knowledge skills as `ready` from `openclaw-workspace`.
+- `openclaw skills workshop list` reports Edith's three ZedBiz proposals as `applied`.
+- Fresh Edith logs show no new `unsupported_value` model error and no new ZedBiz skill watcher permission error after restart.
