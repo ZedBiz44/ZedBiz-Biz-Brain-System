@@ -226,3 +226,23 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Confirmed both installed skill copies contain the new guardrails for actual Notion database parent verification and full `zKnowledge` wiki frontmatter values.
 - Reran ZedBiz custom frontmatter lint: `Errors: 0`; Allie and GaryVee no longer appear in the custom lint report.
 - Reran standard OpenClaw wiki lint from the runtime: `Errors: 0`, `Warnings: 37`. Allie and GaryVee only have expected open-question warnings.
+
+### Terry Skill Workshop Apply And Master Rollout Copy
+
+- Applied the verification-discipline updates to Terry's three ZedBiz knowledge skills through Skill Workshop:
+  - `zedbiz-wiki-research-20260628-8288b3acec`
+  - `zedbiz-notion-knowledge-publishing-20260628-537e3409d3`
+  - `zedbiz-knowledge-routing-20260628-7109bd57c3`
+- Confirmed all three Terry skills remain `Ready`, `Source: openclaw-workspace`, `Visible to model: yes`, and `Available as command: yes`.
+- Created a rollout master copy at `/opt/openclaw/shared/knowledge/z-knowledge/30_TEMPLATES/zedbiz-skills-master/`.
+- Master copy files:
+  - `/opt/openclaw/shared/knowledge/z-knowledge/30_TEMPLATES/zedbiz-skills-master/zedbiz-knowledge-routing/SKILL.md`
+  - `/opt/openclaw/shared/knowledge/z-knowledge/30_TEMPLATES/zedbiz-skills-master/zedbiz-wiki-research/SKILL.md`
+  - `/opt/openclaw/shared/knowledge/z-knowledge/30_TEMPLATES/zedbiz-skills-master/zedbiz-notion-knowledge-publishing/SKILL.md`
+- Added a README clarifying that this is the rollout source, not an active runtime skill folder.
+- Updated the Notion `Memory-Knowledge-Skills` page and daily technical journal with the master-copy location and Terry apply status.
+
+### Verification
+
+- Verified Terry's live `SKILL.md` files match the master rollout copies.
+- Verified master copy permissions are readable for rollout use.
