@@ -292,3 +292,33 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - `openclaw skills list` reports the three ZedBiz knowledge skills as `ready` from `openclaw-workspace`.
 - `openclaw skills workshop list` reports Edith's three ZedBiz proposals as `applied`.
 - Fresh Edith logs show no new `unsupported_value` model error and no new ZedBiz skill watcher permission error after restart.
+
+### ZedBiz Knowledge Skill GitHub Repos
+
+- Created private GitHub source repositories for the three ZedBiz knowledge skills:
+  - `ZedBiz44/zedbiz-knowledge-routing-skill`
+  - `ZedBiz44/zedbiz-wiki-research-skill`
+  - `ZedBiz44/zedbiz-notion-knowledge-publishing-skill`
+- Each repository contains:
+  - repo-level `README.md`
+  - repo-level `.gitignore`
+  - the runtime skill folder named after the skill
+  - `SKILL.md`
+  - `agents/openai.yaml`
+- Pushed initial `main` commits:
+  - `zedbiz-knowledge-routing-skill`: `8dc1408`
+  - `zedbiz-wiki-research-skill`: `4cb11b0`
+  - `zedbiz-notion-knowledge-publishing-skill`: `c4a95fc`
+- Corrected the `zedbiz-wiki-research` frontmatter description, which was truncated in the previous master copy.
+- Synced the corrected repo source back to the VPS rollout master at `/opt/openclaw/shared/knowledge/z-knowledge/30_TEMPLATES/zedbiz-skills-master/`.
+- Updated the rollout master README with direct GitHub source repo links.
+- Synced the corrected skill folders and `agents/openai.yaml` metadata to Edith and Terry under both workspace and runtime-managed skill paths.
+
+### Verification
+
+- Ran `quick_validate.py` successfully for all three skill folders.
+- Verified GitHub created all three repos as private repos under `ZedBiz44`.
+- Verified each repo's `main` branch is reachable by Git.
+- Verified the GitHub connector can fetch each repo and read each `SKILL.md`.
+- Verified the corrected `zedbiz-wiki-research` description appears in the VPS rollout master, Edith workspace skill, and Terry workspace skill.
+- Verified Edith and Terry still report all three ZedBiz skills as `ready` from `openclaw-workspace`.
