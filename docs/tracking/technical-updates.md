@@ -358,3 +358,25 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Fetched the live Notion page before reviewing.
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38da3e33d5818170a529ca5cd84445cc
+
+## 2026-06-28 | Cody | Z-Connections Database And Skill Integration
+
+### Summary
+
+- Created the live Notion `Z-Connections` database under `Core-Master-Databases`.
+- Added core governance fields for connection type, strength, status, evidence confidence, source, context, review dates, and created method.
+- Added relation fields from `Z-Connections` to the live Core Master Databases, including People, Clients, Prospects, Videos, Tools, Offers, Products, Services, Campaigns, Marketing Content, Marketing Ideas, Marketing Swipes, Websites, External Files, Research, SOPs, Templates, Ventures, Knowledge Library, and Business Areas.
+- Added working views for `Needs Review`, `Active Connections`, `Agent Suggestions`, and `By Connection Type`.
+- Updated the live `Z-Knowledge-Connections` planning page to implemented status and embedded a working linked view.
+- Updated `ZedBiz44/zedbiz-notion-knowledge-publishing-skill` so agents know when to create Z-Connections, when to use Direct Relations, and when to skip vague links.
+
+### Verification
+
+- Fetched the live `Z-Connections` data source after creation:
+  - `collection://3436501a-7bd4-4b74-8b6c-8dc490038865`
+  - https://app.notion.com/p/c3d932bbd6fa49e898d7b771f77dcd9c
+- Fetched the live `Z-Knowledge-Connections` plan page after update:
+  - https://app.notion.com/p/38da3e33d58181568840da77f161b6c3
+- Synced the new skill reference into the source repo, staged skill copy, and local rollout-master mirror.
+- Pushed the skill source repo update:
+  - `ZedBiz44/zedbiz-notion-knowledge-publishing-skill` commit `e88b0e7`
