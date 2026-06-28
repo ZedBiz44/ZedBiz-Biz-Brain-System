@@ -380,3 +380,25 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Synced the new skill reference into the source repo, staged skill copy, and local rollout-master mirror.
 - Pushed the skill source repo update:
   - `ZedBiz44/zedbiz-notion-knowledge-publishing-skill` commit `e88b0e7`
+
+## 2026-06-28 | Cody | Z-Knowledge Plan Overview Integration
+
+### Summary
+
+- Reviewed the live `Knowledge System Overview` page and the overall `Notion-AI-Z-Knowledge-Plan` page in Notion.
+- Added a concise `Knowledge System Overview Integration - 2026-06-28` section to the overall plan.
+- Integrated the pertinent governance points:
+  - dual-layer model: Notion for human operations, OpenClaw Memory Wiki / Markdown for agent-readable knowledge
+  - agent-to-human ingestion and cleanup flow
+  - Edith as system librarian for cleanup, routing, and cross-publishing
+  - need for a Z-Knowledge Implementation Tracker
+  - six dashboard pages as a remaining usability layer
+  - later verification automation for parent/database checks, wiki lint, frontmatter checks, and completion reports
+  - operating rules to avoid blind imports, deep folder sprawl, vague permanent pages, and using Notion as the technical source of truth
+
+### Verification
+
+- Fetched both Notion source pages before editing.
+- Fetched the updated `Notion-AI-Z-Knowledge-Plan` page after editing and confirmed the new section appears.
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38da3e33d581815caa7ade7e41e6821c
