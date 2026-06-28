@@ -207,3 +207,22 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Standard OpenClaw wiki lint still reports GaryVee's 3 open-question warnings; these are expected verification gaps, not filing/provenance failures.
 - The remaining ZedBiz frontmatter lint issue is unrelated: `syntheses/allie-bloyd-research.md`.
 - Confirmed Edith and Terry containers remained healthy after the wiki fix.
+
+### Terry Allie Bloyd Filing Correction And Skill Hardening
+
+- Verified Terry's reported Notion filing was not actually correct: the Allie Bloyd page was under the `ZVMP-Marketing-People` folder structure, not the Core Master `People` database.
+- Moved `Person Research - Allie Bloyd` into the actual Core Master `People` data source from the Core-Master-Databases page.
+- Updated People database properties with valid schema values: Business Area, Z-Knowledge, Tags, Source, Purpose, Sensitivity, Expertise/Niche, Status, Confidence, and Knowledge Lane.
+- Hardened the deployed `zedbiz-notion-knowledge-publishing` skill for Edith and Terry so "correct Core Master Database" now requires the final fetched page ancestor path to show the actual Core Master data source/database.
+- Hardened `zedbiz-knowledge-routing` with the same Core Master Database rule.
+- Hardened `zedbiz-wiki-research` so wiki completion requires the ZedBiz custom frontmatter lint and full controlled `zKnowledge` values such as `ZVMP-Marketing-People`.
+- Fixed `syntheses/allie-bloyd-research.md` frontmatter by adding the required ZedBiz fields and replacing invalid top-level `confidence: 0.86` / short `zKnowledge: ZVMP` values.
+- Updated the Notion `Memory-Knowledge-Skills` source page with the runtime correction.
+
+### Verification
+
+- Refetched the Allie Bloyd Notion page and confirmed its parent is now `collection://2df1c19b-ed68-4d57-b426-2dd551432fcb` named `People`, under the Core-Master-Databases page.
+- Confirmed Edith and Terry report all three ZedBiz knowledge skills as `Ready`, `Source: openclaw-workspace`, `Visible to model: yes`, and `Available as command: yes`.
+- Confirmed both installed skill copies contain the new guardrails for actual Notion database parent verification and full `zKnowledge` wiki frontmatter values.
+- Reran ZedBiz custom frontmatter lint: `Errors: 0`; Allie and GaryVee no longer appear in the custom lint report.
+- Reran standard OpenClaw wiki lint from the runtime: `Errors: 0`, `Warnings: 37`. Allie and GaryVee only have expected open-question warnings.
