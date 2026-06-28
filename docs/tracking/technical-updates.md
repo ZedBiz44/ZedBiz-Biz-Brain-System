@@ -322,3 +322,22 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Verified the GitHub connector can fetch each repo and read each `SKILL.md`.
 - Verified the corrected `zedbiz-wiki-research` description appears in the VPS rollout master, Edith workspace skill, and Terry workspace skill.
 - Verified Edith and Terry still report all three ZedBiz skills as `ready` from `openclaw-workspace`.
+
+## 2026-06-28 | Cody | zedbiz-notion-knowledge-publishing Reference Pack
+
+### Summary
+
+- Updated the staged `zedbiz-notion-knowledge-publishing` skill using the approved Option B structure: keep `SKILL.md` lean and add focused reference files.
+- Added four reference files:
+  - `references/core-master-database-routing.md`
+  - `references/core-operating-fields.md`
+  - `references/z-knowledge-folder-map.md`
+  - `references/research-template-rules.md`
+- Updated `SKILL.md` with a Reference Navigation section so agents know when to read each reference.
+- Preserved live Notion as the source of truth for current database schemas, data-source IDs, template pages, and property options.
+
+### Verification
+
+- Ran `quick_validate.py` successfully for the staged `zedbiz-notion-knowledge-publishing` skill.
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38da3e33d58181afa167f8eb7cb13cd0
