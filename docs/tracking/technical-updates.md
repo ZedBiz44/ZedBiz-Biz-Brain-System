@@ -427,3 +427,51 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
   - https://app.notion.com/p/37ea3e33d58181e5a8bff0d4bb97cef7
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38ea3e33d581813bba82faecb632c6d7
+
+## 2026-06-29 | Cody | Z-Knowledge Dashboard Pilot Build
+
+### Summary
+
+- Added Cody's build-control improvements to the live Notion `Z-Knowledge Dashboard Plan`:
+  - implementation tracker requirement
+  - pilot-before-rollout sequence
+  - dashboard success criteria
+  - source database readiness gates
+  - source-of-truth boundary
+  - weekly operating rhythm
+- Created the Notion `Z-Knowledge Dashboards` container page under the dashboard plan.
+- Created the `Z-Knowledge Dashboard Implementation Tracker` database under the container page.
+- Seeded the tracker with:
+  - all 8 planned dashboards
+  - pilot build tasks
+  - source database readiness check
+  - navigation task
+  - weekly system-health rhythm
+  - dashboard change-logging rule
+- Created the three pilot dashboard pages:
+  - `Z-Knowledge Main Hub`
+  - `Wiki Command Center`
+  - `Marketing Hub`
+- Added live linked views to the pilot pages:
+  - Main Hub: pilot build board and recent knowledge updates
+  - Command Center: Knowledge Library needs-review view and Research low-confidence view
+  - Marketing Hub: active campaigns, marketing content pipeline, active offers, high-value swipes, marketing ideas triage, and marketing research feed
+
+### Verification
+
+- Fetched and used the live `Core-Master-Databases` page to identify source data sources.
+- Verified source database schemas before attaching views:
+  - `Knowledge Library`
+  - `Campaigns`
+  - `Offers`
+  - `Marketing Content`
+  - `Marketing Ideas`
+  - `Marketing Swipes`
+  - `Research`
+  - `Websites`
+- Updated the tracker statuses:
+  - pilot dashboards moved to `Needs Review`
+  - source database readiness check marked `Done`
+  - navigation task marked `Done`
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38ea3e33d581817ab7cac95240493ea9
