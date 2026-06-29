@@ -475,3 +475,29 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
   - navigation task marked `Done`
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38ea3e33d581817ab7cac95240493ea9
+
+## 2026-06-29 | Cody | Z-Knowledge Dashboard Routing Correction
+
+### Summary
+
+- Confirmed the live Knowledge Hub surfaces belong in the `Z-Knowledge` teamspace.
+- Confirmed instructional, SOP, architecture, and build-plan material stays in `Z-AI-Biz-Brain-Plan`.
+- Moved the `Z-Knowledge Dashboards` container page into the Z-Knowledge hub area.
+- Renamed the old Z-Knowledge teamspace home to `Z-Knowledge Hub`.
+- Replaced the generic teamspace placeholder content with a practical routing hub linking:
+  - `Core-Master-Databases`
+  - `Page/Research-Templates`
+  - `Z-Knowledge Dashboards`
+- Added explicit routing notes to both the dashboard container and the dashboard plan.
+
+### Verification
+
+- Verified `Z-Knowledge Dashboards` now sits under the Z-Knowledge hub page.
+- Verified the dashboard container still contains:
+  - `Z-Knowledge Dashboard Implementation Tracker`
+  - `Z-Knowledge Main Hub`
+  - `Wiki Command Center`
+  - `Marketing Hub`
+- Verified the dashboard plan remains in the planning/instructional side.
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38ea3e33d58181568352c5b17d2d12a7
