@@ -402,3 +402,28 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Fetched the updated `Notion-AI-Z-Knowledge-Plan` page after editing and confirmed the new section appears.
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38da3e33d581815caa7ade7e41e6821c
+
+## 2026-06-29 | Cody | Z-Knowledge Dashboard Plan Review
+
+### Summary
+
+- Reviewed the live Notion `Z-Knowledge Dashboard Plan`.
+- Compared it against the consolidated `Notion-AI-Z-Knowledge-Plan` and prior Z-Knowledge dashboard guidance.
+- Confirmed the 8-page dashboard architecture is directionally strong:
+  - 2 top-level pages for navigation and system health.
+  - 6 organizational hub pages mapped to the Z-Knowledge folder structure.
+- Recommended improvements before buildout:
+  - add a simple implementation tracker with owner, status, dependencies, and next action;
+  - pilot one hub before building all 8 pages;
+  - define required views and success criteria for each dashboard;
+  - confirm all linked views can filter on live `Z-Knowledge`, `Status`, `Owner`, `Confidence`, and review-date fields;
+  - preserve the source-of-truth boundary: Notion for human dashboarding, GitHub/Markdown/wiki for technical execution material.
+
+### Verification
+
+- Fetched the live dashboard plan in Notion:
+  - https://app.notion.com/p/c22a3e33d58183f283990103151ad976
+- Fetched the consolidated overall plan in Notion:
+  - https://app.notion.com/p/37ea3e33d58181e5a8bff0d4bb97cef7
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38ea3e33d581813bba82faecb632c6d7
