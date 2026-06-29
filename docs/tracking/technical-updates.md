@@ -536,3 +536,22 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Queried the implementation tracker and confirmed each category record now has a real dashboard URL and `Needs Review` status.
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38ea3e33d58181848f1af0f361d71e53
+
+## 2026-06-29 | Cody | Z-Knowledge Dashboard Folder Card Polish
+
+### Summary
+
+- Updated the `Z-Knowledge Main Dashboard` so each of the six main category boxes now contains its top-level folder links directly inside the box.
+- Improved the main dashboard layout with:
+  - a stronger start callout
+  - cleaner two-column category cards
+  - clearer folder labels inside each category card
+  - a three-part shortcut bar for revenue work, marketing assets, and research/control
+- Preserved the existing live dashboard views and child system pages/databases.
+
+### Verification
+
+- Fetched the updated `Z-Knowledge Main Dashboard` and confirmed folder links render inside the six main category boxes.
+- Confirmed the `Z-Knowledge Dashboards` child page remains under the main dashboard.
+- Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
+  - https://app.notion.com/p/38ea3e33d5818136a873da23a15a5106
