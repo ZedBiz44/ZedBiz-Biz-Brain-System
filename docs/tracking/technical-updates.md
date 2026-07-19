@@ -555,3 +555,29 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Confirmed the `Z-Knowledge Dashboards` child page remains under the main dashboard.
 - Created a matching Cody journal page in the Notion Technical Documentation `Tech Updates` inline database:
   - https://app.notion.com/p/38ea3e33d5818136a873da23a15a5106
+
+## 2026-07-19 | Cody | Business Brief Template Rewrite
+
+### Summary
+
+- Reviewed the live Z-Knowledge folder structure, master-database rules, Dual-Channel Research SOP, Database Record SOP, Research Template Guide, Venture Brief Template, and Business Brief Template.
+- Rewrote the Notion `Business-Brief-Template` so it follows the same decision-first, human-readable structure as the revised Venture Brief Template.
+- Corrected the old client-only framing so the template now supports all approved Business relationship types:
+  - Client
+  - Prospect
+  - Vendor
+  - Local
+  - Resort
+  - Network
+  - Personal
+- Added business-specific guidance for target market, primary offer, revenue model, ZedBiz relevance, risks, recommendations, sources, optional due diligence, and engagement planning.
+- Embedded the current Z-Knowledge operating rules for page naming, duplicate checks, Z-Code routing, confidence, external source links, relation fields, secrets, Memory Wiki mirroring, and external-memory activity.
+
+### Verification
+
+- Fetched the updated Notion page after the write and confirmed the full replacement rendered successfully.
+- Confirmed the page title remains `Business-Brief-Template` and the existing icon remains in place.
+- Confirmed the page contains one frontmatter line and one H1 heading.
+- Confirmed the live page now directs completed records to the `Business` data source rather than the `Clients` data source.
+- Live Notion page:
+  - https://app.notion.com/p/388a3e33d5818191ae9fec37f4e1c33c
