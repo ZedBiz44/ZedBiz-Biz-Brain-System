@@ -581,3 +581,29 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Confirmed the live page now directs completed records to the `Business` data source rather than the `Clients` data source.
 - Live Notion page:
   - https://app.notion.com/p/388a3e33d5818191ae9fec37f4e1c33c
+
+## 2026-07-19 | Cody | Person Brief Template Rewrite
+
+### Summary
+
+- Reviewed Jack's revised `Risks, Unknowns, And Verification Gaps` and `Recommendation` sections in the Business Brief Template without changing that page.
+- Rewrote the Notion `Person-Brief-Template` so it follows the same decision-first, human-readable structure as the Business and Venture Brief templates.
+- Adapted the template for people rather than businesses or internal ventures, including:
+  - identity, role, expertise, and public profile
+  - audience, positioning, and influence
+  - offers and monetization
+  - ZedBiz, Jack, client, and venture relevance
+  - relationship and networking opportunities
+  - reputation, credibility, audience-alignment, and brand-safety risks
+  - public-source verification and privacy guardrails
+- Simplified the Recommendation section into clear person-specific relationship choices such as follow, learn from, model ethically, engage, nurture, partner, refer, compete, monitor, research deeper, or avoid.
+- Added Z-Knowledge operating instructions for the live People data source, naming, duplicate checks, Z-Code routing, confidence, external source links, relation fields, Memory Wiki mirroring, and external-memory activity.
+
+### Verification
+
+- Fetched the updated Person Brief Template after the write and confirmed the full replacement rendered successfully.
+- Confirmed the title remains `Person-Brief-Template` and the existing person icon remains in place.
+- Confirmed the page contains one frontmatter line and one H1 heading.
+- Re-fetched the Business Brief Template and confirmed Jack's revised risk and recommendation sections remained unchanged.
+- Live Notion page:
+  - https://app.notion.com/p/37da3e33d581819095b2ceccda5d3916
