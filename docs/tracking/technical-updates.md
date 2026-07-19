@@ -652,3 +652,34 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Re-fetched the parent `Page-Research-Templates` page and confirmed all 17 official child titles display correctly.
 - Live template directory:
   - https://app.notion.com/p/383a3e33d581808cab86f2971570ad3d
+
+## 2026-07-19 | Cody | Marketing-Focused Biz Plan Template Created
+
+### Summary
+
+- Created a new Notion `Biz-Plan-Template` under the live `Page-Research-Templates` directory.
+- Designed it as a concise planning and research template rather than a traditional investor-length business plan.
+- Included:
+  - Executive Summary and Company Overview
+  - Problem, Solution, and Customer Outcome
+  - Target Market and Ideal Customer
+  - Competitive Positioning and USP
+  - Offer Design
+  - Marketing and Sales Plan
+  - Idea Validation and Validation Steps
+  - Marketing Pilot
+  - Operations and Logistics
+  - Financial Snapshot and The Ask
+  - Success Criteria
+  - 30-60-90 Day Action Plan
+  - Delivery and Measurement
+  - Risks, Verification Gaps, and Action Decision
+- Added explicit owners, deadlines, completion evidence, pilot metrics, stop/improve/scale criteria, and weekly measurement guidance.
+- Added Z-Knowledge instructions requiring the Biz-Plan to use the same authoritative database, Name-Key, and six-digit Z-Code subject number as its related Brief, with the Biz-Plan suffix range `020-049`.
+
+### Verification
+
+- Fetched the created page and confirmed its title, icon, frontmatter, one H1, full template body, and final instructions.
+- Fetched the parent `Page-Research-Templates` directory and confirmed `Biz-Plan-Template` is listed.
+- Live Notion page:
+  - https://app.notion.com/p/3a2a3e33d58181b8ae02cef01f218b86
