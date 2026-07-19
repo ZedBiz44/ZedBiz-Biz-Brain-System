@@ -607,3 +607,48 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Re-fetched the Business Brief Template and confirmed Jack's revised risk and recommendation sections remained unchanged.
 - Live Notion page:
   - https://app.notion.com/p/37da3e33d581819095b2ceccda5d3916
+
+## 2026-07-19 | Cody | Z-Knowledge Brief Template System Completion
+
+### Summary
+
+- Inventoried every page under the live Notion `Page-Research-Templates` page.
+- Used the approved Venture, Business, and Person Brief templates as the shared structural pattern.
+- Renamed and rewrote the remaining 17 official templates:
+  - `SOP-Brief-Template`
+  - `Template-Brief-Template`
+  - `Product-Brief-Template`
+  - `Service-Brief-Template`
+  - `Offer-Brief-Template`
+  - `Campaign-Brief-Template`
+  - `Marketing-Content-Brief-Template`
+  - `Marketing-Swipe-Brief-Template`
+  - `Marketing-Idea-Brief-Template`
+  - `Tool-Brief-Template`
+  - `Video-Brief-Template`
+  - `Website-Brief-Template`
+  - `Knowledge-Note-Brief-Template`
+  - `Research-Brief-Template`
+  - `External-File-Brief-Template`
+  - `Project-Brief-Template`
+  - `Prospect-Brief-Template`
+- Converted the former `Sample1` page into the official Project template and the former `Sample2` page into the official Prospect template.
+- Tailored each page to its subject-specific decision, business relevance, key findings, risks, verification gaps, recommendation choices, source evidence, optional deep-dive sections, and Z-Knowledge operating rules.
+- Preserved depth differences: high-risk operational and commercial templates remain detailed, while Marketing Swipe, Marketing Idea, and External File templates stay lighter.
+
+### Architecture Corrections
+
+- Updated the Prospect template to use the current live `Business` database with `Business Relationship = Prospect`; it no longer directs users to create or depend on a separate Prospects database.
+- Updated the Project template to route projects into the authoritative content database for the project subject; it does not invent a Projects database that is absent from the current master-database architecture.
+- Left two duplicate legacy pages untouched because cleanup was not explicitly authorized:
+  - `Business-Brief-Template (1)`
+  - `Person-Page-Research-Template (1)`
+
+### Verification
+
+- Re-fetched all 17 updated Notion pages after writing.
+- Confirmed 17/17 pages have the expected new title, current frontmatter, exactly one H1, Decision Brief, subject-specific Risks, Recommendation, Sources, and Final Instructions.
+- Confirmed all existing page icons were preserved.
+- Re-fetched the parent `Page-Research-Templates` page and confirmed all 17 official child titles display correctly.
+- Live template directory:
+  - https://app.notion.com/p/383a3e33d581808cab86f2971570ad3d
