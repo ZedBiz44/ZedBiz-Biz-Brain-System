@@ -772,3 +772,13 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Branch: `codex/z-code-allocator`
 - Deployment record commit: `e14175c`
 - Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
+
+### Bootstrap Import
+
+- Queried every database linked from the live `Content-Master-Databases` page, including archived-row views.
+- Inspected 549 rows and found 349 populated Z-Code fields representing 336 distinct codes across 78 topic groups.
+- Imported all 336 distinct codes into the allocator after a successful one-record test.
+- Verified SQLite integrity, exact source/import count reconciliation, no duplicate allocator codes, and no duplicate topic/suffix pairs.
+- Created a post-import SQLite backup at `/opt/zedbiz-services/z-code-allocator/data/backups/zcode-bootstrap-20260720T202705Z.db`.
+- Found three duplicate-code groups in Notion. Each code was imported once to prevent reuse, but allocation remains disabled until the conflicting Notion records are corrected.
+- Detailed technical record: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/blob/codex/z-code-allocator/activity-logs/2026-07-20-z-code-bootstrap-import.md
