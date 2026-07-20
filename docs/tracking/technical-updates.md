@@ -723,3 +723,10 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Treat Z-Code as a permanent record identity rather than editable classification metadata.
 - Add one central allocation registry or allocator and make the six-digit uniqueness scope explicit.
 - Use Notion relations for cross-subject and cross-lane connections rather than stretching the code to express every relationship.
+
+### Owner Correction And Live Recheck
+
+- Jack correctly rejected the recommendation that an assigned Z-Code should remain immutable after reclassification.
+- Correct rule: Z-Knowledge-Core and Z-Code work together. If the record was assigned to the wrong Z-Knowledge-Core and is moved to the correct core or lane, the Z-Code must also be corrected to match.
+- Re-fetched the live Database Record SOP after Jack's edits and confirmed it now clearly defines the four-part code, lane-scoped six-digit topic identifier, complete-code uniqueness, and Biz-Plan versus general-entry suffix ranges.
+- No Z-Code rules or records were edited by Cody during this recheck.
