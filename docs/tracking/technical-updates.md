@@ -829,4 +829,13 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Completion commit: `f3b6e64`
 - Notion mirror commit: `0d31e6f`
 - Notion registry: https://app.notion.com/p/89267d1e18f84f669269c900dc730b08
+
+### Owner And Repair Manual
+
+- Created the comprehensive `Z-Code-Allocator-Details` owner and repair manual in Notion.
+- Documented the architecture, ownership, current state, allocation rules, agent installations, server paths, API endpoints, database design, secrets policy, Notion mirror, backup and restore process, troubleshooting, safe change workflow, repair verification, history, and future handoff package.
+- Created and verified the post-go-live backup `/opt/zedbiz-services/z-code-allocator/data/backups/zcode-post-go-live-20260720-1548MDT.db` containing 81 topics and 350 records.
+- Backup verification: `PRAGMA quick_check=ok`; SHA-256 `b8a4149b9f3babff933092f39a93a24162d2205b83c2d64652ca8e0e3ba51d4c`.
+- Manual: https://app.notion.com/p/3a3a3e33d581803e8c40ed6621b341ce
+- Technical documentation commit: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/commit/d1593e3
 - Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
