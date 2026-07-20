@@ -747,3 +747,28 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 ### Status
 
 - Architecture recommendation only. No allocator service, endpoint, database, credentials, agent tools, or Notion registry was created or changed.
+
+## 2026-07-20 | Cody | Z-Code Allocator Pilot Deployed Safely
+
+### Outcome
+
+- Built the transactional Z-Code Allocator service in the technical source-of-truth repository on branch `codex/z-code-allocator`.
+- Deployed the Docker service on VPS1 and exposed the pilot API at `https://edith.zbiz.ca/_zedbiz-zcode`.
+- Verified the internal and public health checks, rejected unauthenticated requests, and confirmed the allocation safety lock is active.
+- Generated separate service credentials for Edith, Marsha, Frank, Ruby, Harry, and Suzy without storing credentials in GitHub.
+- Added the reusable agent skill, operating SOP, deployment files, smoke test, audit history, stale reservation handling, reassignment support, durable Notion mirror outbox, and administrative review queue.
+- Local verification completed with seven passing automated tests, including concurrent allocation and permanent non-reuse of stale or failed reservations.
+
+### Safety Decision
+
+- No live Z-Code was allocated.
+- The existing Notion system already contains Z-Codes. Starting with an empty allocator database could issue a duplicate, so allocation is disabled by default.
+- Added a controlled bootstrap import endpoint. The current Notion Z-Code inventory must be imported and verified before allocation can be enabled.
+- Agent skill rollout and Notion mirror processing remain intentionally paused until bootstrap is complete.
+
+### Technical Record
+
+- Repository: `ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2`
+- Branch: `codex/z-code-allocator`
+- Deployment record commit: `e14175c`
+- Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
