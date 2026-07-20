@@ -702,3 +702,24 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Confirmed its title, icon, frontmatter, Active status, metadata, full content, references, and progressive-completion guidance.
 - Live Notion SOP:
   - https://app.notion.com/p/3a2a3e33d581810a8080dc4d30104419
+
+## 2026-07-20 | Cody | Z-Code Design Review
+
+### Review
+
+- Reviewed the live Z-Knowledge Database Record SOP, Biz-Plan template, and Biz-Plan creation and usage SOP without changing the Z-Code system.
+- Confirmed the hierarchical pattern is useful for grouping a knowledge core, lane, subject, and individual content record.
+- Identified the main operating risk as manual sequence allocation: simultaneous human or agent creation can produce duplicate numbers unless allocation is controlled centrally.
+- Identified wording that should be clarified before wider agent use:
+  - whether the six-digit subject number is globally unique or scoped to a core and five-digit lane;
+  - whether assigned codes remain immutable when a record is reclassified;
+  - how a new number is reserved and duplicate-checked;
+  - how Template, SOP, Biz-Plan, and Project Plan records share or do not share a subject number.
+- Confirmed the Biz-Plan SOP record currently has no Z-Code. This avoids guessing, but the record remains incomplete under the required-field rules until an authorized code and Z-Knowledge-Core are assigned.
+
+### Recommendation
+
+- Keep the present code structure.
+- Treat Z-Code as a permanent record identity rather than editable classification metadata.
+- Add one central allocation registry or allocator and make the six-digit uniqueness scope explicit.
+- Use Notion relations for cross-subject and cross-lane connections rather than stretching the code to express every relationship.
