@@ -782,3 +782,13 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Created a post-import SQLite backup at `/opt/zedbiz-services/z-code-allocator/data/backups/zcode-bootstrap-20260720T202705Z.db`.
 - Found three duplicate-code groups in Notion. Each code was imported once to prevent reuse, but allocation remains disabled until the conflicting Notion records are corrected.
 - Detailed technical record: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/blob/codex/z-code-allocator/activity-logs/2026-07-20-z-code-bootstrap-import.md
+
+### Conflict Recheck
+
+- Jack reported changing the example value and correcting the other conflicts, so the full inventory and exact affected pages were fetched again.
+- The new shared example value `ZVIM-29999-1090099-049` appears on eleven rows and is invalid because its Topic Identifier has seven digits instead of six.
+- The Clients AA-Example still shares `ZVIM-20003-100003-020` with LightningIM.
+- Deals7 and Paradise Lifestyle Club still share `ZVIM-20001-100009-010`.
+- Two Rocky Mountain Music Culture records still share `ZVIM-20001-100011-052`.
+- Recommended rule: example/template rows should have a blank Z-Code rather than a shared fake code.
+- No Notion or allocator records were changed during the recheck; allocation remains disabled.
