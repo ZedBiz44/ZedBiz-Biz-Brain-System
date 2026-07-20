@@ -730,3 +730,20 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Correct rule: Z-Knowledge-Core and Z-Code work together. If the record was assigned to the wrong Z-Knowledge-Core and is moved to the correct core or lane, the Z-Code must also be corrected to match.
 - Re-fetched the live Database Record SOP after Jack's edits and confirmed it now clearly defines the four-part code, lane-scoped six-digit topic identifier, complete-code uniqueness, and Biz-Plan versus general-entry suffix ranges.
 - No Z-Code rules or records were edited by Cody during this recheck.
+
+## 2026-07-20 | Cody | Cross-Server Z-Code Allocator Architecture
+
+### Recommendation
+
+- Host one deterministic Z-Code allocation service on VPS1 as an independent shared-service container; Edith owns the allocation policy but routine allocations do not require an Edith LLM turn.
+- Store allocation state in a transactional SQLite database for the present workload and expose it only through an HTTPS API; agents must never access or share the database file directly.
+- Provide exact lookup, topic reservation, content-entry reservation, confirmation, and controlled reassignment operations.
+- Use one shared request queue for exceptions. Clear requests allocate automatically; ambiguous core/lane choices and reassignments move to `Needs Review` for Edith.
+- Let Edith approve exceptions through the same service. Slack or an agent webhook may notify her, but Notion should remain the human review/mirror layer rather than the live coordination channel.
+- Expose the service through a proposed endpoint such as `https://zcode.zbiz.ca`, protected with per-agent service credentials stored in 1Password.
+- Provide thin tool wrappers for VPS1 and VPS2 OpenClaw agents and Ruby's VPS3 Hermes runtime. All agents call the same HTTPS service, so they do not need direct agent-to-agent communication.
+- Mirror confirmed allocations and reassignment history to Notion for human visibility; keep the server database as the operational allocator and never reuse retired identifiers.
+
+### Status
+
+- Architecture recommendation only. No allocator service, endpoint, database, credentials, agent tools, or Notion registry was created or changed.
