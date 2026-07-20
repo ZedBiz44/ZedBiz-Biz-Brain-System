@@ -792,3 +792,36 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Two Rocky Mountain Music Culture records still share `ZVIM-20001-100011-052`.
 - Recommended rule: example/template rows should have a blank Z-Code rather than a shared fake code.
 - No Notion or allocator records were changed during the recheck; allocation remains disabled.
+
+## 2026-07-20 | Cody | Z-Code Allocator Completed And Rolled Out
+
+### Corrected Source Data
+
+- Confirmed database `21b992db59654909b9a286f948e8ad08` is **Business**, not Clients, and confirmed the conflicting Business row had been deleted.
+- Confirmed Jack's Deals7, Paradise Lifestyle Club, and Rocky Mountain Music Culture corrections live.
+- Corrected the eleven AA/example rows to topic identifier `109099` and unique suffixes `039` through `049`.
+- Completed a fresh full scan: 548 rows, 349 populated Z-Codes, 349 unique codes, zero duplicate codes, zero invalid formats, and zero archived rows.
+
+### Clean Bootstrap And Enablement
+
+- Rebuilt the allocator database from the corrected Notion inventory: 349 active records across 80 topic groups.
+- Verified SQLite integrity and zero duplicate code or topic/suffix pairs.
+- Preserved a clean backup at `/opt/zedbiz-services/z-code-allocator/data/backups/zcode-clean-bootstrap-20260720.db` with SHA-256 `6fe38d22c15ee834f986232a463c8578b007ef2fca6b1c49d099457c624df5c6`.
+- Enabled live allocation while retaining the source-controlled default-off safety setting for fresh deployments.
+
+### Pilot And Fleet Rollout
+
+- Marsha completed the one-agent pilot and received `Z1ST-80001-100001-010` for `Z-Code-Allocator-Service`.
+- Created and confirmed the corresponding Notion Tools record: https://app.notion.com/p/3a3a3e33d58181d29936e6047dfbfc11
+- Verified replaying Marsha's exact allocation request returned the same code rather than issuing another.
+- Rolled the authenticated client skill out to Edith and Marsha on VPS1, Frank, Harry, and Suzy on VPS2, and Ruby on VPS3.
+- Verified every agent can retrieve the same authoritative allocator record.
+- Added a native Node.js helper for OpenClaw and retained the Python helper for Hermes/Python runtimes.
+- Removed all temporary credential-transfer files after deployment.
+
+### Technical Record
+
+- Repository: `ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2`
+- Branch: `codex/z-code-allocator`
+- Completion commit: `f3b6e64`
+- Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
