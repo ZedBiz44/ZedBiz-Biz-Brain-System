@@ -818,10 +818,15 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Verified every agent can retrieve the same authoritative allocator record.
 - Added a native Node.js helper for OpenClaw and retained the Python helper for Hermes/Python runtimes.
 - Removed all temporary credential-transfer files after deployment.
+- Created the Notion `Z-Code-Registry` under `Z-Knowledge-Master-Databases`.
+- Deployed a separate mirror worker container so Notion outages cannot block allocation.
+- Verified both pilot outbox events completed, the Active registry row matches the allocator, and the outbox has zero pending events.
 
 ### Technical Record
 
 - Repository: `ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2`
 - Branch: `codex/z-code-allocator`
 - Completion commit: `f3b6e64`
+- Notion mirror commit: `0d31e6f`
+- Notion registry: https://app.notion.com/p/89267d1e18f84f669269c900dc730b08
 - Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
