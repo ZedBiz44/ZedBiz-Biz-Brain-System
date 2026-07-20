@@ -838,4 +838,13 @@ Date: 2026-06-23 | Author: Cody | Status: Draft
 - Backup verification: `PRAGMA quick_check=ok`; SHA-256 `b8a4149b9f3babff933092f39a93a24162d2205b83c2d64652ca8e0e3ba51d4c`.
 - Manual: https://app.notion.com/p/3a3a3e33d581803e8c40ed6621b341ce
 - Technical documentation commit: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/commit/d1593e3
+
+### Z-Code Allocation SOP
+
+- Replaced the short Notion allocation outline with a complete SOP for humans and AI agents.
+- Covered imports, Briefs, Biz-Plans, Research, multiple records from one source, new-versus-existing topics, allocator states, exceptions, confirmation, and validation.
+- Added a copy-ready human request prompt, a full agent execution prompt, a completion report, and final checklist.
+- Defined the contract for Marsha's upcoming Content Master Database skill: it owns intake, classification, fields, relations, content creation, and quality control, while the existing `request-z-code` skill remains the only numbering mechanism.
+- SOP: https://app.notion.com/p/3a3a3e33d58180f7bf5ed69f0a398b84
+- Technical commit: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/commit/26ab648
 - Source branch: https://github.com/ZedBiz44/ZedBiz-openclaw-ai-agents-vps1-vps2/tree/codex/z-code-allocator
